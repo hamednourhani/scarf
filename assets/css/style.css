@@ -462,15 +462,15 @@ line-height : 240%;
   left : 5px;
   display : block;
   border : 1px #ccc;
-  width : 300px;
-  height : 300px;
+  width : 294px;
+  height : 286px;
 
 }
 .model-mask{
   display : block;
   position : absolute;
-  top : 70px;
-  left : 70px;
+  top : 10px;
+  left : 21px;
   width : 150px;
   height : 150px;
   border : 1px #cccccc;

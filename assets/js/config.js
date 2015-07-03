@@ -12,20 +12,21 @@ requirejs.config({
     jquery :{
       exports : "$"
     },
-    snap: {
-      exports: "Snap"
-    },
-  
+      
   }
 }); /*requirejs.config*/
 
-require(['jquery','snap'], function($,Snap){
+require(['jquery','snap'], function($){
     
   
   $('document').ready(function(){
     $('#pattern').on('click',function(){
       var pattern = $(this).children('img.pattern').attr("src");
       $('.model-mask').css('background-attachment',pattern);
+
+      var s = Snap("#model-mask");
+      // Lets create big circle in the middle:
+      var bigCircle = s.circle(150, 150, 100);
     })
     
     
