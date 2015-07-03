@@ -3,20 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>scarf</title>
+	<title>scarf site</title>
 </head>
 <body>
 	<header>
-		
+		<div class="site-hero">
+			<h3>click on pattern to show on model</h3>
+		</div>
 	</header>
 
-	<main>
+	<main class="main-content">
 		<div class="model-container">
-			<span id="circle" ></span>
+			<div class="model-box">
+				
+				<img class="model" id="model" src="model.png"/>
+				<div class="model-mask" id="model-mask" ></div>
+				
+			</div>
 		</div>
 		<div class="pattern-container">
-			<img src="assets/img/scarf.png" id="pattern" class="pattern"/>
-			<p>click on pattern to show on model</p>
+			<a id="pattern" href="#">
+				<img src="assets/img/scarf.png" class="pattern"/>
+			</a>
+			
 		</div>
 	</main>
 

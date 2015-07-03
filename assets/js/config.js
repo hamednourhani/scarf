@@ -23,6 +23,10 @@ require(['jquery','snap'], function($,Snap){
     
   
   $('document').ready(function(){
+    $('#pattern').on('click',function(){
+      var pattern = $(this).children('img.pattern').attr("src");
+      $('.model-mask').css('background-attachment',pattern);
+    })
     
     
   });

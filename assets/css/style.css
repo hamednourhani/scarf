@@ -425,3 +425,76 @@ td,
 th {
   padding: 0;
 }
+
+/*---------------------scarf site------------------------*/
+.site-hero{
+clear: both;
+background: #efefef;
+text-align : center;
+line-height : 240%;
+}
+.site-hero h3{
+  font-weight : 200px;
+}
+.main-content{
+  width : 100%;
+  padding : 0 3%;
+
+}
+.model-container{
+  width : 45%;
+  float : left;
+  padding : 10px 1%;
+  text-align : center;
+  margin : auto;
+
+}
+.model-box{
+  width : 310px;
+  height : 310px;
+  position : relative;
+  margin : auto;
+
+}
+.model{
+  position : absolute;
+  top : 5px;
+  left : 5px;
+  display : block;
+  border : 1px #ccc;
+  width : 300px;
+  height : 300px;
+
+}
+.model-mask{
+  display : block;
+  position : absolute;
+  top : 70px;
+  left : 70px;
+  width : 150px;
+  height : 150px;
+  border : 1px #cccccc;
+  z-index: 9999;
+  /* background: url("../img/scarf.png"); */
+}
+.pattern-container{
+  width : 45%;
+  float : left;
+  padding : 10px 1%;
+  text-align : center;
+  margin : auto;
+
+}
+a#pattern{
+  padding : 0;
+  margin : 0;
+  display : block;
+box-shadow: 2px 2px 3px 3px  #C1C0DF;
+width : 310px;
+height : auto;
+transition : 0.4s box-shadow color;
+margin : auto;
+}
+a#pattern:hover{
+  box-shadow: 1.4px 1.4px 2px 2px #DFC0C0;
+}
