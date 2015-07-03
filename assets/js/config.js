@@ -1,35 +1,23 @@
-// RequireJS Config file.
-
-requirejs.config({
-//  baseUrl: "",
-  paths: {
-    jquery: "jquery-1.11.3.min",
-    snap : "snap.svg-min",
-           
-  },
-
-  shim: {
-    jquery :{
-      exports : "$"
-    },
-      
-  }
-}); /*requirejs.config*/
-
-require(['jquery','snap'], function($){
-    
+  
   
   $('document').ready(function(){
     $('#pattern').on('click',function(){
       var pattern = $(this).children('img.pattern').attr("src");
       $('.model-mask').css('background-attachment',pattern);
 
-      var s = Snap("#model-mask");
+      var svg = Snap("#svg-mask");
       // Lets create big circle in the middle:
-      var bigCircle = s.circle(150, 150, 100);
-    })
-    
+      var path = $("#mask-path").attr('d');
+      var mask = svg.path(path).attr({
+        fill: "assets/img/scarf.png",
+        stroke: "#bada55",
+        strokeWidth: 0
+    });
+      mask.image("assets/img/scarf.png",0,0,138,200);
+});
+
+      
     
   });
 
-}); /*require*/
+

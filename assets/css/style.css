@@ -470,9 +470,9 @@ line-height : 240%;
   display : block;
   position : absolute;
   top : 10px;
-  left : 21px;
-  width : 150px;
-  height : 150px;
+  left : 27px;
+  width : 138px;
+  height : 200px;
   border : 1px #cccccc;
   z-index: 9999;
   /* background: url("../img/scarf.png"); */
@@ -497,4 +497,11 @@ margin : auto;
 }
 a#pattern:hover{
   box-shadow: 1.4px 1.4px 2px 2px #DFC0C0;
+}
+.path{
+  display : none;
+}
+.svg-class{
+  width : 137px;
+  height : 200px;
 }
